@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/books/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/books/static/js/main.4ef40dfd.chunk.js",
-    "main.js.map": "/books/static/js/main.4ef40dfd.chunk.js.map",
+    "main.js": "/books/static/js/main.79689631.chunk.js",
+    "main.js.map": "/books/static/js/main.79689631.chunk.js.map",
     "runtime-main.js": "/books/static/js/runtime-main.b537bb25.js",
     "runtime-main.js.map": "/books/static/js/runtime-main.b537bb25.js.map",
-    "static/js/2.6b8c019b.chunk.js": "/books/static/js/2.6b8c019b.chunk.js",
-    "static/js/2.6b8c019b.chunk.js.map": "/books/static/js/2.6b8c019b.chunk.js.map",
+    "static/js/2.5f3b76ca.chunk.js": "/books/static/js/2.5f3b76ca.chunk.js",
+    "static/js/2.5f3b76ca.chunk.js.map": "/books/static/js/2.5f3b76ca.chunk.js.map",
     "static/js/3.ea184f7e.chunk.js": "/books/static/js/3.ea184f7e.chunk.js",
     "static/js/3.ea184f7e.chunk.js.map": "/books/static/js/3.ea184f7e.chunk.js.map",
     "index.html": "/books/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/books/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.6b8c019b.chunk.js.LICENSE.txt": "/books/static/js/2.6b8c019b.chunk.js.LICENSE.txt",
+    "static/js/2.5f3b76ca.chunk.js.LICENSE.txt": "/books/static/js/2.5f3b76ca.chunk.js.LICENSE.txt",
     "static/media/harrypotter.c3a9afba.jpg": "/books/static/media/harrypotter.c3a9afba.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b537bb25.js",
-    "static/js/2.6b8c019b.chunk.js",
+    "static/js/2.5f3b76ca.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.4ef40dfd.chunk.js"
+    "static/js/main.79689631.chunk.js"
   ]
 }
