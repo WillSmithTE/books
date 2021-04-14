@@ -7,8 +7,10 @@ export const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [results, setResults] = useState([]);
     useEffect(() => {
-        bookApi.search(searchTerm)
-            .then(setResults)
+        if (searchTerm) {
+            bookApi.search(searchTerm)
+                .then(setResults)
+        }
     }, [searchTerm]);
     return results.length ?
         <>
