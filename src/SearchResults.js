@@ -9,8 +9,7 @@ export const SearchResults = ({ books }) => {
     const slides = books.map((book, index) => {
         return { ...book, content: <Book book={book} />, onClick: () => setSlide(index) };
     });
-    console.error('here!')
-    return <>
+    return <div style={{ width: "80%", heither: '70%' }}>
         <h1>HI</h1>
         <Carousel
             slides={slides}
@@ -19,5 +18,5 @@ export const SearchResults = ({ books }) => {
             showNavigation={false}
             config={config.gentle}
         />
-    </>;
+    </div>;
 };

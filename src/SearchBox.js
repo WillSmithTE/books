@@ -6,15 +6,17 @@ import { SearchBoxContainer } from './SearchBox.styled';
 
 const useStyles = makeStyles((theme) => ({
     searchBar: {
-        backgroundColor: "white",
-        minWidth: '250px'
+        backgroundColor: "#EEEAEA",
+        width: '250px'
     },
     searchButton: {
-        marginTop: '1rem',
+        marginTop: '2rem',
         backgroundColor: '#FFE600',
         '&:hover': {
             backgroundColor: "orange",
          },
+         width: '70%',
+         marginLeft: '15%',
     }
 }));
 

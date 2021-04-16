@@ -1,18 +1,36 @@
 import styled from 'styled-components';
-import { Typography } from '@material-ui/core';
+import { Button, Card, Typography } from '@material-ui/core';
 
-export const Book = ({ book: { name, author, price, imgUrl } = {} }) => {
+export const Book = ({ book: { name, author, imgUrl } = {} }) => {
     return <BookContainer>
-        <Typography variant='h5'>{name}</Typography>
-        {imgUrl && <BookImage alt='book' src={imgUrl} />}
+        <InsideBook>
+            <BookImage alt={name} src={imgUrl} />
+            <Text text={name} />
+            <Text text={author} />
+            <DownloadButton />
+        </InsideBook>
     </BookContainer>;
 };
 
-const BookContainer = styled.div`
-    height: 300px;
-    width: 250px;
-    border: 1px solid white;
-    margin: 10px;
+const DownloadButton = () => <Button style={{ backgroundColor: '#676565', width: '60%', margin: '2rem auto 0' }}>Download</Button>
+
+const Text = ({ text }) => <TextContainer>
+    <Typography variant='h5'>{text}</Typography>
+</TextContainer>;
+
+const TextContainer = styled(Card)`
+    background-color: #EEEEEE;
+    margin-top: 1.5rem;
+`;
+
+const BookContainer = styled(Card)`
+    background-color: #C4C4C4
+`;
+
+const InsideBook = styled.div`
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
 `;
 
 const BookImage = styled.img`

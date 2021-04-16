@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { bookApi } from './bookApi';
+import { bookApi, withKeys } from './bookApi';
+import { ResultsAndSearchBox } from './ResultsAndSearchBox';
 import { SearchBox } from './SearchBox';
-import { SearchResults } from './SearchResults';
 
 export const Home = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -13,9 +13,6 @@ export const Home = () => {
         }
     }, [searchTerm]);
     return results.length ?
-        <>
-            <SearchBox setSearchTerm={setSearchTerm} />
-            <SearchResults books={results} />
-        </> :
+        <ResultsAndSearchBox setSearchTerm={setSearchTerm} results={results}/> :
         <SearchBox setSearchTerm={setSearchTerm} />
 };

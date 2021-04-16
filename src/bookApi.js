@@ -8,6 +8,7 @@ import uuid from "uuid";
 
 export const bookApi = {
     search: async (searchTerm) => {
+        await new Promise(r => setTimeout(r, 1000));
         return withKeys;
     }
 };
@@ -44,4 +45,4 @@ const dummyBooks = [
         imgUrl: howtomotivateyourchild
     },
 ]
-const withKeys = dummyBooks.map((book) => ({key: uuid(), ...book}))
+export const withKeys = dummyBooks.map((book) => ({key: uuid(), ...book}))
