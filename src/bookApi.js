@@ -4,10 +4,11 @@ import michaeljordan from './resources/michaeljordan.jpeg';
 import thepowerofnow from './resources/thepowerofnow.jpeg';
 import lordoftherings from './resources/lordoftherings.jpeg';
 import range from './resources/range.jpeg';
+import uuid from "uuid";
 
 export const bookApi = {
     search: async (searchTerm) => {
-        return dummyBooks;
+        return withKeys;
     }
 };
 
@@ -43,3 +44,4 @@ const dummyBooks = [
         imgUrl: howtomotivateyourchild
     },
 ]
+const withKeys = dummyBooks.map((book) => ({key: uuid(), ...book}))

@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { Book } from './Book';
+// import styled from 'styled-components';
+// import { Book } from './Book';
 
-export const Row = ({book}) => <FlexBox>
-    <Book book={book}/>
-</FlexBox>;
+// export const Row = ({book}) => <FlexBox>
+//     <Book book={book}/>
+// </FlexBox>;
 
-const FlexBox = styled.div`
-display: flex
-direction: row
-`;
+// const FlexBox = styled.div`
+// display: flex
+// direction: row
+// `;
