@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '1rem',
         backgroundColor: '#FFE600',
         '&:hover': {
-            backgroundColor: "#f00",
+            backgroundColor: "orange",
          },
     }
 }));
